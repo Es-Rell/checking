@@ -20,7 +20,7 @@ npm run husky install
 npx husky add .husky/commit-msg ""
 ```
 
-In .husky/commit-msg 在文件末尾增加两行代码:
+在 `.husky/commit-msg` 文件末尾增加代码:
 
 ```
 export GIT_PARAMS=$*
