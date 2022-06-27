@@ -1,0 +1,7 @@
+.npmignore
+.prettierrc.cjs
+package-lock.json
+yarn.lock
+.vscode
+.husky
+CHANGELOG.md

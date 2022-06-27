@@ -1,0 +1,44 @@
+{
+  "name": "@esrell/checking",
+  "version": "1.0.0",
+  "description": "Checking commit message",
+  "author": "esrell@qq.com",
+  "license": "ISC",
+  "main": "index.js",
+  "type": "commonjs",
+  "bin": {
+    "checking": "index.js"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "verify",
+    "message",
+    "check",
+    "esrell"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Es-Rell/checking"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
+    "**/*.{js,jsx,tsx,ts,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "start": "node index.js",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx "
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "os-locale": "5.0.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  }
+}
