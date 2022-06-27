@@ -21,16 +21,8 @@
     "type": "git",
     "url": "git+https://github.com/Es-Rell/checking"
   },
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,md,json}": [
-      "prettier --write"
-    ]
-  },
   "scripts": {
-    "start": "node index.js",
-    "lint-staged": "lint-staged",
-    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx "
+    "start": "node index.js"
   },
   "dependencies": {
     "chalk": "4.1.2",
@@ -38,7 +30,6 @@
   },
   "devDependencies": {
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   }
 }
