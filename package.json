@@ -22,6 +22,7 @@
     "url": "git+https://github.com/Es-Rell/checking"
   },
   "scripts": {
+    "prepare": "husky install",
     "start": "node index.js"
   },
   "dependencies": {
